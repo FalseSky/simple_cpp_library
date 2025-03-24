@@ -1,0 +1,24 @@
+package:
+  name: simple_cpp_library
+  version: "1.0.0"
+
+source:
+  path: ../
+
+requirements:
+  build:
+    - cmake
+    - boost
+    - gtest
+
+test:
+  requires:
+    - gtest
+
+  commands:
+    - simple_cpp_library_tests
+
+about:
+  home: "https://github.com/FalseSky/simple_cpp_library"
+  license: "MIT"
+  summary: "A simple C++ string manipulation library"
